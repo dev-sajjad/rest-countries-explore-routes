@@ -15,6 +15,12 @@
     background-color: salmon;
     color: white;
 }
+.header input {
+    font-size: 20px;
+    padding: 4px 6px;
+    border: none;
+    border-radius: 10px;
+}
 .active {
     background-color: salmon;
     font-size: 20px;

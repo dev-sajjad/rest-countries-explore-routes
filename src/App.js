@@ -3,6 +3,7 @@ import './App.css';
 import Countries from './components/Countries/Countries';
 import CountryDetails from './components/CountryDetails/CountryDetails';
 import Home from './components/Home/Home';
+import SearchResult from './components/SerachResult/SearchResult';
 import Main from './layout/Main';
 
 function App() {
@@ -21,13 +22,20 @@ function App() {
           element: <Countries></Countries>,
         },
         {
-          path: '/countries/:name',
+          path: "/countries/:name",
           loader: async ({ params }) => {
             return fetch(`https://restcountries.com/v3.1/name/${params.name}`);
           },
-          element: <CountryDetails></CountryDetails>
+          element: <CountryDetails></CountryDetails>,
         },
       ],
+    },
+    {
+      path: "/search",
+      loader: async () => {
+        return fetch("https://restcountries.com/v3.1/all");
+      },
+      element: <SearchResult></SearchResult>,
     },
   ]); 
 
