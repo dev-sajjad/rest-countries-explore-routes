@@ -1,0 +1,12 @@
+.country-details {
+    border: 2px solid orangered;
+    margin: 20px;
+    padding: 8px;
+    border-radius: 15px;
+    background-color: darkcyan;
+}
+.country-details img {
+    width: 500px;
+    height: 300px;
+    border-radius: 5px;
+}

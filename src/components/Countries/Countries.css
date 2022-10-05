@@ -1,0 +1,11 @@
+.country-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.header-title {
+    color: crimson;
+    border: 1px solid crimson;
+    border-radius: 5px;
+    padding: 5px;
+}
